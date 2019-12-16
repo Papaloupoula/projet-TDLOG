@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="boite">
+    <h1>Inscrivez-vous</h1>
+    <form method="post" action="{{ url_for('signup') }}">
+        <p><label>Nom :</label> <input type="text" name="username" required></p>
+        <p><button type="submit"> OK </button></p>
+    </form>
+    <img src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sri%20Lanka.svg" WIDTH=194 HEIGHT=90>
+</div>
+{% endblock %}
